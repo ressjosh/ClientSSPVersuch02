@@ -1,5 +1,6 @@
 import KAGO_framework.Config;
 import KAGO_framework.control.MainController;
+import my_project.control.GameControll;
 
 public class MainProgram {
 
@@ -12,6 +13,7 @@ public class MainProgram {
      * befindet. Dort sollte deine Arbeit beginnen.
      */
     public static void main (String[] args){
-        MainController.startFramework();
+        //MainController.startFramework();
+        new GameControll();
     }
 }
