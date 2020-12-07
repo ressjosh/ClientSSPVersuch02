@@ -34,9 +34,10 @@ public class SpielClient extends Client {
             }else if(aktuelleKommandos[1].equals("auswahl")){
                 myControll.auswahlKannGesendetWerden();
             }else if(aktuelleKommandos[1].equals("weiterMachen")){
-
+                myControll.spielendabfrage();
             }
         }else if(aktuelleKommandos[0].equals("punkte")){
+            meinSpieler.entferneAlleSpieler();
             punkteAnzeigen(aktuelleKommandos);
         }else if(aktuelleKommandos[0].equals("gegner")){
             if(aktuelleKommandos[1].equals("name")){
@@ -89,6 +90,7 @@ public class SpielClient extends Client {
 
     public void setSpielbeginn(boolean b){
         spielbeginn = b;
+
     }
 
 }

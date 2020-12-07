@@ -30,6 +30,10 @@ public class Spieler {
         alleSpieler.dequeue();
     }
 
+    public void entferneAlleSpieler(){
+        while(!alleSpieler.isEmpty()) alleSpieler.dequeue();
+    }
+
     public boolean nochSpielerFurRanking(){
         return alleSpieler.isEmpty();
     }
@@ -74,4 +78,11 @@ public class Spieler {
         return myImage;
     }
 
+    public String gibUndEnferneSpieler(){
+        if(!alleSpieler.isEmpty()){
+            String[] s = alleSpieler.front().split("§");
+            alleSpieler.dequeue();
+            return s[0];
+        }else return "";
+    }
 }

@@ -78,10 +78,14 @@ public class GameControll {
 
    public void spielende(){
         spielClient.setSpielbeginn(true);
-
+        vC.spielZuEnde(spieler.gibUndEnferneSpieler(), spieler.gibUndEnferneSpieler(), spieler.gibUndEnferneSpieler());
    }
 
    public void uebergebeAusgang(String s){
         vC.uebergebeAusgabe(s);
+   }
+
+   public void spielendabfrage(){
+
    }
 }
