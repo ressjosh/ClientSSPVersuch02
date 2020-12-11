@@ -122,4 +122,10 @@ public class ViewControll {
         endbildschirm.siegerUebermittlung(first, second, third);
     }
 
+    public void starteNeu(){
+        endbildschirm.setVisible(false);
+        spielInterface.setFensterVisible(true);
+        spielInterface.setDerGegner("...");
+    }
+
 }

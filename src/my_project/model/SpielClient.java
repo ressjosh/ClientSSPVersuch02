@@ -63,7 +63,7 @@ public class SpielClient extends Client {
     }
 
     private void punkteAnzeigen(String[] aktuelleKommandos){
-        if(spielbeginn){
+        /*if(spielbeginn){
             String tmp = "<html><body>Rangfolge:  <br/><br/";
             for(int i = 1; i < aktuelleKommandos.length; i++){
                 if(i<=3) tmp+= ">"+ i + ". <";
@@ -73,8 +73,8 @@ public class SpielClient extends Client {
             tmp+= "</body></html>";
             System.out.println(tmp);
             myControll.rankingAktualisieren(tmp);
-            spielbeginn = false;
-        }else{
+            spielbeginn = false;*/
+        //}else{
             String tmp = "<html><body>Rangfolge:  <br/><br/";
             for(int i = 2; i < aktuelleKommandos.length; i= i +2){
                 if(i<=6) tmp+= ">"+ i/2 + ". <";
@@ -84,7 +84,7 @@ public class SpielClient extends Client {
             tmp+= "</body></html>";
             System.out.println(tmp);
             myControll.rankingAktualisieren(tmp);
-        }
+        //}
 
     }
 

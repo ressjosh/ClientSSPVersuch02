@@ -87,7 +87,7 @@ public class SpielInterface {
         fenster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         fenster.pack();
         fenster.setVisible(false);
-        fenster.setBounds(200,30,750,650);
+        fenster.setBounds(200,30,850,650);
         fenster.setBackground(Color.DARK_GRAY);
         mainPanel.setBackground(Color.darkGray);
         panel01.setBackground(Color.darkGray);

@@ -101,6 +101,7 @@ public class GameControll {
                options[0]);
        if(eingabe == 0){
            spielClient.send("weiter$true");
+           vC.starteNeu();
        }else{
            spielClient.send("weiter$false");
            System.exit(0);
