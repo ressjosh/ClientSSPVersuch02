@@ -3,6 +3,7 @@ package my_project.control;
 import my_project.model.SpielClient;
 import my_project.model.Spieler;
 
+import javax.swing.*;
 import java.awt.*;
 
 public class GameControll {
@@ -86,6 +87,23 @@ public class GameControll {
    }
 
    public void spielendabfrage(){
-
+       String[] options = new String[2];
+       options[0] = "Weiter";
+       options[1] = "Weg hier";
+       int eingabe = JOptionPane.showOptionDialog(
+               null, //Component
+               "Möchtest du noch eine Runde spielen?",
+               "Weiter/Raus",
+               JOptionPane.YES_NO_OPTION,
+               JOptionPane.PLAIN_MESSAGE,
+               null, //Icon
+               options,
+               options[0]);
+       if(eingabe == 0){
+           spielClient.send("weiter$true");
+       }else{
+           spielClient.send("weiter$false");
+           System.exit(0);
+       }
    }
 }

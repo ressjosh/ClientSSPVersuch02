@@ -298,7 +298,7 @@ public class SpielInterface {
                 dolchButton.setBackground(Color.red);
             }
         }else{
-            JOptionPane.showMessageDialog(null, "Ohh, das war ein unentschieden");
+            JOptionPane.showMessageDialog(null, "Ohh, das war ein unentschieden" + vC.getMeineAuswahl() + auswahl);
         }
     }
 

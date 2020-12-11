@@ -33,7 +33,9 @@ public class Endbildschirm {
         First.setForeground(Color.lightGray);
         Second.setForeground(Color.lightGray);
         Third.setForeground(Color.lightGray);
-
+        First.setFont(generalFont);
+        Second.setFont(generalFont);
+        Third.setFont(generalFont);
     }
 
 
